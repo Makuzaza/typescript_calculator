@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <h1>TypeScript Calculator</h1>
+    <div id="calculator">
+      <input type="text" id="display" disabled />
+      <button class="delete" onclick="calculator.clearDisplay()">C</button>
+      <button class="seven" onclick="calculator.inputNumber('7')">7</button>
+      <button class="eight" onclick="calculator.inputNumber('8')">8</button>
+      <button class="nine" onclick="calculator.inputNumber('9')">9</button>
+      <button class="divide" onclick="calculator.inputOperator('/')">/</button>
+      <button class="four" onclick="calculator.inputNumber('4')">4</button>
+      <button class="five" onclick="calculator.inputNumber('5')">5</button>
+      <button class="six" onclick="calculator.inputNumber('6')">6</button>
+      <button class="multiply" onclick="calculator.inputOperator('*')">
+        *
+      </button>
+      <button class="one" onclick="calculator.inputNumber('1')">1</button>
+      <button class="two" onclick="calculator.inputNumber('2')">2</button>
+      <button class="three" onclick="calculator.inputNumber('3')">3</button>
+      <button class="minus" onclick="calculator.inputOperator('-')">-</button>
+      <button class="zero" onclick="calculator.inputNumber('0')">0</button>
+      <button class="plus" onclick="calculator.inputOperator('+')">+</button>
+      <button class="equal" onclick="calculator.calculateResult()">=</button>
+    </div>
+
+    <script src="./src/calculator.ts" type="module"></script>
+  </body>
+</html>
